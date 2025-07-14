@@ -1,0 +1,78 @@
+[
+    {
+        "Accueil":{
+            "text":"Hello!",
+            "h1" :"Full Stack Web Developer",
+            "p1":"I design modern, user-centered applications. Curious and rigorous, I adapt to technological changes to offer relevant solutions.",
+            "button":"View LinkedIn profile"
+        },
+        "About":{
+            "title": "About",
+            "h3_1": "Full Stack Web Developer",
+            "p1": "I design and develop end-to-end web applications, combining modern and intuitive interfaces with robust and secure backend architectures.",
+            "p2": "From UX/UI design to API development and database optimization, each project is designed to provide a smooth, fast, and device-adapted experience.",
+            "button_cv": "Resume",
+            "button_contact": "Contact me",
+            "h3_2": "Skills",
+            "skills": [
+                "Html/Css/JavaScript",
+                "Python",
+                "ReactJs",
+                "PHP",
+                "Laravel",
+                "UI / UX Figma"
+            ]
+        },
+        "Services":{
+            "title": "My Services",
+            "backend": "Backend Development",
+            "backend_skills": ["PHP", "Node.js", "Laravel"],
+            "frontend": "Frontend Development",
+            "frontend_skills": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Redux"],
+            "database": "Database Design",
+            "database_skills": ["MySQL", "MongoDB"],
+            "tools": "Tools",
+            "tools_skills": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "WordPress"]
+        },
+        "Projects":{
+            "title": "My Projects",
+            "list": [
+                {
+                    "title": "Interactive Learning Platform",
+                    "description": "Educational web application allowing teachers to create courses, groups, and questions. Students can track their progress and acquire skills. Technologies: React, Laravel API."
+                },
+                {
+                    "title": "DHCos E-commerce Site",
+                    "description": "Online store dedicated to natural cosmetics, built with Odoo."
+                },
+                {
+                    "title": "Game Math Educational Game",
+                    "description": "Educational game to strengthen children's math skills. Technologies: HTML5, CSS3, JavaScript."
+                }
+            ]
+        },
+        "Contact":{
+            "title": "Contact me",
+            "name": "Doha Choukri",
+            "job": "Full Stack Web Developer",
+            "age": "20 years old",
+            "phone": "06 17 61 21 91",
+            "location": "Casablanca, Morocco",
+            "form_name": "Enter your name",
+            "form_email": "Enter your email address",
+            "form_message": "Enter your message",
+            "button": "Contact me",
+            "success": "Message sent successfully!",
+            "sending": "Sending...",
+            "error": "Error: ",
+            "server_error": "Server error, please try again later."
+        },
+        "header": {
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "projects": "Projects",
+            "contact": "Contact me"
+        }
+    }
+]

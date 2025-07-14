@@ -1,0 +1,62 @@
+.profilContainer {
+  background: #ee9a9a;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profil-container:hover {
+  transform: scale(1.02);
+}
+
+.flag {
+  width: 35px;
+  height: 25px;
+  margin: 0 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+p svg {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+
+p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.profil-container.open {
+  width: 500px;
+}
+
+.profil-container.closed {
+  width:    280px;
+  padding: 20px 10px;
+}
+
+.img-profil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}

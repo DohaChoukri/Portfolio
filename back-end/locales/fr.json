@@ -1,0 +1,78 @@
+[
+    {
+        "Accueil":{
+            "text":"Bonjour !",
+            "h1" :"Développeuse Web Full Stack",
+            "p1":"je conçois des applications modernes et centrées sur l'utilisateur. Curieuse et rigoureuse,je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes.",
+            "button":"Voir le profil LinkedIn"
+        },
+        "About":{
+            "title": "À propos",
+            "h3_1": "Développeuse Web Full Stack",
+            "p1": "Je conçois et développe des applications web de bout en bout, en combinant des interfaces modernes et intuitives avec des architectures backend solides et sécurisées.",
+            "p2": "De l’UX/UI design au développement d’API et à l’optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports.",
+            "button_cv": "CV",
+            "button_contact": "Contactez-moi",
+            "h3_2": "Compétences",
+            "skills": [
+                "Html/Css/JavaScript",
+                "Python",
+                "ReactJs",
+                "PHP",
+                "Laravel",
+                "UI / UX Figma"
+            ]
+        },
+        "Services":{
+            "title": "Mes Services",
+            "backend": "Développement Backend",
+            "backend_skills": ["PHP", "Node.js", "Laravel"],
+            "frontend": "Développement Frontend",
+            "frontend_skills": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Redux"],
+            "database": "Conception de Bases de Données",
+            "database_skills": ["MySQL", "MongoDB"],
+            "tools": "Outils",
+            "tools_skills": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "WordPress"]
+        },
+        "Projects":{
+            "title": "Mes projets",
+            "list": [
+                {
+                    "title": "Plateforme Interactive d'Apprentissage",
+                    "description": "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences. Technologies : React, Laravel API."
+                },
+                {
+                    "title": "Site e-commerce DHCos",
+                    "description": "Boutique en ligne dédiée aux cosmétiques naturels réalisée avec Odoo."
+                },
+                {
+                    "title": "Jeu éducatif Game Math",
+                    "description": "Jeu éducatif pour renforcer les compétences en mathématiques des enfants. Technologies : HTML5, CSS3, JavaScript."
+                }
+            ]
+        },
+        "Contact":{
+            "title": "Contactez-moi",
+            "name": "Doha Choukri",
+            "job": "Développeuse Web Full Stack",
+            "age": "20 ans",
+            "phone": "06 17 61 21 91",
+            "location": "Casablanca, Maroc",
+            "form_name": "Entrez votre nom",
+            "form_email": "Entrez l'adresse email",
+            "form_message": "Entrez votre message",
+            "button": "Contactez-moi",
+            "success": "Message envoyé avec succès !",
+            "sending": "Envoi en cours...",
+            "error": "Erreur : ",
+            "server_error": "Erreur serveur, réessayez plus tard."
+        },
+        "header": {
+            "home": "Accueil",
+            "about": "À propos",
+            "services": "Services",
+            "projects": "Projets",
+            "contact": "Contactez-moi"
+        }
+    }
+]

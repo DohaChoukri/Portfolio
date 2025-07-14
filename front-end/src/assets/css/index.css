@@ -1,0 +1,221 @@
+:root {
+  --yinmn-blue: #355070;
+  --chinese-violet: #6d597a;
+  --china-rose: #39a3dc;
+  --light-coral: #e56b6f;
+  --buff: #eaac8b;
+  --main-bg: #fbfbfb;         
+  --main-dark: black;       
+  --main-red: var(--china-rose); 
+  --main-white: #fff;
+}
+  body{
+    background-color: var(--main-bg);
+  }
+  section {
+    padding: 4rem 0;
+    
+  }
+  .home-title {
+    color: var(--yinmn-blue);
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .home-hello {
+    color: var(--main-dark);
+  }
+  .home-btn {
+    background: var(--main-red) !important;
+    color: var(--main-white) !important;
+  }
+  /* .home-btn:hover {
+    background: var(--china-rose) !important;
+  } */
+  .home-photo {
+    width: 300px;
+    height: 300px;
+    border: 4px solid var(--yinmn-blue);
+    border-radius: 50% ;
+  }
+  @media (max-width: 990px) {
+    .home-photo {
+      display: none !important;
+    }
+    .text-col {
+      width: 100% !important;
+    }
+  }
+
+
+
+  /* header */
+  #img1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.5rem;
+    margin-bottom: 15px;
+    border: 3px solid var(--main-white);
+    box-shadow: 0 2px 8px var(--yinmn-blue);
+  }
+  /* === Global Styles === */
+  
+  .bg-dark {
+    background: var(--main-dark) !important;
+  }
+  h1{
+    color: var(--main-dark);
+  }
+  .text-danger, .btn-danger {
+    background: var(--yinmn-blue) !important;
+    border: none !important;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--main-red);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--main-red);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+  
+  /* === Header/Navbar === */
+  .custom-navbar {
+    background: var(--yinmn-blue) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .custom-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--main-white) !important;
+    letter-spacing: 1px;
+  }
+  .custom-navbar .nav-link {
+    color: var(--main-white) !important;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.2s;
+  }
+  .custom-navbar .nav-link.active,
+  .custom-navbar .nav-link:hover {
+    color: var(--main-red) !important;
+  }
+  
+  /* === Home Section === */
+  .home-avatar {
+    border: 4px solid var(--main-red);
+    box-shadow: 0 4px 16px rgba(230,57,80,0.15);
+  }
+  
+  /* === About Section === */
+  .about-section {
+    background: var(--main-bg);
+  }
+  .about-section .card {
+    border: none;
+    box-shadow: 0 2px 12px var(--main-red)14;
+  }
+  .about-section img {
+    border: 4px solid var(--main-red);
+  }
+  
+  /* === Services Section === */
+  /* .services-section {
+    background: var(--main-dark);
+  } */
+  .services-section .card {
+    border: none;
+    background: var(--main-white);
+    color: var(--main-dark);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+  .services-section .card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(230,57,80,0.12);
+  }
+  .services-section .card-title {
+    color: var(--yinmn-blue);
+    font-weight: 700;
+  }
+  
+  /* === Resume Section === */
+  .resume-section {
+    background: var(--main-bg);
+  }
+  .resume-section .card {
+    border: none;
+    box-shadow: 0 2px 12px rgba(230,57,80,0.08);
+  }
+  .progress-bar {
+    background-color: var(--main-red) !important;
+  }
+  
+  /* === Projects Section === */
+  .projects-section .card {
+    border: none;
+    box-shadow: 0 2px 12px rgba(230,57,80,0.08);
+    transition: transform 0.2s
+  }
+  .footer-section {
+    background: var(--yinmn-blue);
+    color: var(--main-white);
+    
+  }
+
+
+  .aboutBtn , .home-btn {
+  /* background-color: #39a3dc; même couleur que danger */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.aboutBtn:hover,.home-btn:hover {
+  background-color: #39a3dc; /* teinte légèrement plus foncée au survol */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px #39a3dc;
+}
+
+.aboutBtn a ,.home-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aboutBtn a:hover ,.home-btn a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.progress-custom .progress-bar {
+  text-align: left; 
+  padding-left: 10px; 
+  font-weight: 500; 
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
