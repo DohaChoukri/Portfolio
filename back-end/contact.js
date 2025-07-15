@@ -1,40 +1,34 @@
 const express = require('express');
-const amqp = require('amqplib');
-const cors = require('cors');
+const amqp    = require('amqplib');
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+const router = express.Router();
 
-const RABBITMQ_URL = 'amqp://localhost'; // adapte selon ton config
+const RABBITMQ_URL = process.env.RABBITMQ_URL || 'amqp://localhost';
+let channel;
 
-let channel, connection;
-
-async function connectRabbitMQ() {
+(async () => {
   try {
-    connection = await amqp.connect(RABBITMQ_URL);
-    channel = await connection.createChannel();
+    const conn = await amqp.connect(RABBITMQ_URL);
+    channel = await conn.createChannel();
     await channel.assertQueue('email_queue');
-    console.log('Connected to RabbitMQ');
-  } catch (error) {
-    console.error('RabbitMQ connection error', error);
+    console.log('✅ RabbitMQ connecté');
+  } catch (err) {
+    console.error('❌ Erreur RabbitMQ:', err);
   }
-}
+})();
 
-connectRabbitMQ();
+router.use(express.json());
 
-app.post('/contact', async (req, res) => {
+router.post('/', async (req, res) => {
   const { name, email, message } = req.body;
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Champs manquants' });
   }
 
-  // Publier message dans RabbitMQ
   const msg = { name, email, message };
-  channel.sendToQueue('email_queue', Buffer.from(JSON.stringify(msg)));
+  channel?.sendToQueue('email_queue', Buffer.from(JSON.stringify(msg)));
 
   res.json({ status: 'Message reçu, email en cours d\'envoi' });
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+module.exports = router;

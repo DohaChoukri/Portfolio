@@ -4,7 +4,7 @@ import axios from "axios";
 export const useTrad = (lang) => {
   const [trad, setTrad] = useState(null);
   useEffect(() => {
-    axios.get(`http://localhost:4000/translations?lang=${lang}`)
+    axios.get(`http://localhost:5000/api/traduction/${lang}`)
       .then(res => setTrad(res.data))
       .catch(err => console.error(err));
   }, [lang]);
