@@ -1,11 +1,7 @@
 const express = require('express');
 const i18n = require('i18n');
-const cors = require('cors');
 
 const router = express.Router();
-
-// CORS pour les appels API (facultatif ici, gère-le globalement si besoin)
-router.use(cors({ origin: 'http://localhost:5173' }));
 
 // Configurer i18n
 i18n.configure({
