@@ -1,8 +1,8 @@
 [
     {
         "Accueil":{
-            "text":"Bonjour !",
-            "h1" :"Développeuse Web Full Stack",
+            "text":"Bonjour, Je suis DoHa ChOukri ",
+            "h1" :"Développeuse Full Stack",
             "p1":"je conçois des applications modernes et centrées sur l'utilisateur. Curieuse et rigoureuse,je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes.",
             "button":"Voir le profil LinkedIn"
         },
@@ -39,15 +39,24 @@
             "list": [
                 {
                     "title": "Plateforme Interactive d'Apprentissage",
-                    "description": "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences. Technologies : React, Laravel API."
+                    "description": "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences.",
+                    "Technologies": ["React","CSS3", "Bootstrap5", "Laravel", "API"],
+                    "p_Lien" :"Voir le projet",
+                    "a_Lien" :"Masque la video"
                 },
                 {
                     "title": "Site e-commerce DHCos",
-                    "description": "Boutique en ligne dédiée aux cosmétiques naturels réalisée avec Odoo."
+                    "description": "Le projet, vise à développer une solution technologique innovante pour promouvoir et gérer la vente de cosmétiques naturels. Il s'inscrit dans une tendance croissante de consommation responsable, répondant à la demande de produits sains, écologiques et éthiques.",
+                    "Technologies": ["Odoo", "PostgreSQL"],
+                    "p_Lien" :"Voir le projet",
+                    "a_Lien" :"Masque la video"
                 },
                 {
                     "title": "Jeu éducatif Game Math",
-                    "description": "Jeu éducatif pour renforcer les compétences en mathématiques des enfants. Technologies : HTML5, CSS3, JavaScript."
+                    "description": "Jeu éducatif pour renforcer les compétences en mathématiques des enfants.",
+                    "Technologies": ["HTML5", "CSS3", "Bootstrap5", "JavaScript", "PHP"],
+                    "p_Lien" :"Voir le projet",
+                    "a_Lien" :"Masque la video"
                 }
             ]
         },

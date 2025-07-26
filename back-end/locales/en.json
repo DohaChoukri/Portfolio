@@ -1,7 +1,7 @@
 [
     {
         "Accueil":{
-            "text":"Hello!",
+            "text":"Hello, I'm DoHa ChOukri ",
             "h1" :"Full Stack Web Developer",
             "p1":"I design modern, user-centered applications. Curious and rigorous, I adapt to technological changes to offer relevant solutions.",
             "button":"View LinkedIn profile"
@@ -39,15 +39,27 @@
             "list": [
                 {
                     "title": "Interactive Learning Platform",
-                    "description": "Educational web application allowing teachers to create courses, groups, and questions. Students can track their progress and acquire skills. Technologies: React, Laravel API."
+                    "description": "Educational web application allowing teachers to create courses, groups, and questions. Students can track their progress and acquire skills.",
+                    "Technologies": ["React", "Laravel", "API"],
+                    "p_Lien" :"View project",
+                    "a_Lien" :"Hide video",
+                    "lien": ""
                 },
                 {
                     "title": "DHCos E-commerce Site",
-                    "description": "Online store dedicated to natural cosmetics, built with Odoo."
+                    "description": "The project aims to develop an innovative technological solution to promote and manage the sale of natural cosmetics. It is part of a growing trend toward responsible consumption, responding to the demand for healthy, ecological, and ethical products.",
+                    "Technologies": ["Odoo", "Python", "PostgreSQL"],
+                    "p_Lien" :"View project",
+                    "a_Lien" :"Hide video",
+                    "lien": ""
                 },
                 {
                     "title": "Game Math Educational Game",
-                    "description": "Educational game to strengthen children's math skills. Technologies: HTML5, CSS3, JavaScript."
+                    "description": "Educational game to strengthen children's math skills.",
+                    "Technologies": ["HTML5", "CSS3", "Bootstrap", "JavaScript", "PHP"],
+                    "p_Lien" :"View project",
+                    "a_Lien" :"Hide video",
+                    "lien": ""
                 }
             ]
         },

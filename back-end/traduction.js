@@ -7,7 +7,7 @@ const router = express.Router();
 i18n.configure({
   locales: ['en', 'fr'],
   directory: __dirname + '/locales',
-  defaultLocale: 'en',
+  defaultLocale: 'fr',
   queryParameter: 'lang',
 });
 

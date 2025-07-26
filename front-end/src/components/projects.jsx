@@ -1,55 +1,87 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { useTrad } from './getTrad';
+import { useLanguage } from '../context/LanguageContext';
 import game from '../assets/image/game.png';
 import nouvlair from '../assets/image/nouvlair.png';
 import dhCosmetiques from '../assets/image/dh_Cosmetiques.png';
-import { useTrad } from './getTrad';
-import { useLanguage } from '../context/LanguageContext';
+import MathGameVideo from '../assets/video/Math_Game.mp4';
+import dhCosmetiquesVideo from '../assets/video/dhcosmétique.mp4';
+import nouvlairVideo from '../assets/video/Nouvlair.mp4';
+import { useState } from "react";
+import { FaGithub} from "react-icons/fa";
 
 function Projects() {
   const { lang } = useLanguage();
   const trad = useTrad(lang);
+  const [visibleVideos, setVisibleVideos] = useState({});
   
   if (!trad) return null;
   
   const tradData = trad[0] || {};
 
-  const projects = [
-    {
-      title: tradData.Projects?.list?.[0]?.title || "Plateforme Interactive d'Apprentissage",
-      image: nouvlair,
-      description: tradData.Projects?.list?.[0]?.description || "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences. Technologies : React, Laravel API.",
-      lien:"", //http://localhost:3000/
-    },
-    {
-      title: tradData.Projects?.list?.[1]?.title || "Site e-commerce DHCos",
-      image: dhCosmetiques,
-      description: tradData.Projects?.list?.[1]?.description || "Boutique en ligne dédiée aux cosmétiques naturels réalisée avec Odoo.",
-      lien:"", //http://localhost:8069/
-    },
-    {
-      title: tradData.Projects?.list?.[2]?.title || "Jeu éducatif Game Math",
-      image: game,
-      description: tradData.Projects?.list?.[2]?.description || "Jeu éducatif pour renforcer les compétences en mathématiques des enfants. Technologies : HTML5, CSS3, JavaScript.",
-      lien:"",
-    },
-  ];
+  const projetsList = () => {
+    const list = tradData.Projects?.list || [];
+    const images = [nouvlair, dhCosmetiques, game];
+    const videos = [nouvlairVideo, dhCosmetiquesVideo, MathGameVideo];
+
+    const handleShowVideo = (idx) => {
+      setVisibleVideos((prev) => ({
+        ...prev,
+        [idx]: !prev[idx], // toggle true/false
+      }));
+    };
+
+    return list.map((project, idx) => (
+      <Col md={4} sm={6} xs={12} key={idx} className="mb-4">
+        <div className="card h-100 border-0 shadow-sm p-3 text-white" style={{ backgroundColor: "#355070" }}>
+          <img
+            src={images[idx]}
+            alt={project.title}
+            className="card-img-top"
+            style={{ height: "200px", objectFit: "cover" }}
+          />
+          <div className="card-body d-flex flex-column">
+            <h5 className="card-title text-center mb-3 ">{project.title}</h5>
+            <p className="card-text text-center mb-4">{project.description}</p>
+
+            <div className="mb-3">
+              <strong>Technologies: </strong>
+              {(Array.isArray(project.Technologies)
+                ? project.Technologies
+                : [project.Technologies]
+              ).map((tech, index) => (
+                <span key={index} className="badge bg-primary me-1 mb-1">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-auto text-center ">
+              <button className="btn btn-outline-light rounded-pill  px-4 mx-2" onClick={() => handleShowVideo(idx)}>
+                {visibleVideos[idx] ? project.a_Lien : project.p_Lien}
+              </button>
+            </div>
+            {visibleVideos[idx] && (
+              <div className="mt-4">
+                <video className="w-100 rounded shadow" controls>
+                  <source src={videos[idx]} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            )}
+          </div>
+        </div>
+      </Col>
+    ));
+  };
+
 
   return (
     <section id="projects" className="projects-section py-5">
       <Container>
         <h2 className="section-title text-center mb-4">{tradData.Projects?.title || "Mes projets"}</h2>
         <Row>
-          {projects.map((project, idx) => (
-              <Col md={4} sm={6} xs={12} key={idx} className="mb-4">
-                <a href={project.lien} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
-                  <div className="clickable-card text-center bg-white h-100 shadow text-dark p-4 rounded">
-                    <img src={project.image} alt={project.title} className="img-fluid mb-3" />
-                    <h3 className="card-title mb-4">{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                </a>
-              </Col>
-          ))}
+          {projetsList()}
         </Row>
       </Container>
     </section>

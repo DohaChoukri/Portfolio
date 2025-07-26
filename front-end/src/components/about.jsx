@@ -5,6 +5,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const skills = [
   { name: "Html/Css/JavaScript", value: 80 },
+  { name: "C", value: 65 },
   { name: "Python", value: 75 },
   { name: "ReactJs", value: 90 },
   { name: "PHP", value: 75 },
