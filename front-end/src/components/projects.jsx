@@ -1,19 +1,13 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { useTrad } from './getTrad';
 import { useLanguage } from '../context/LanguageContext';
 import game from '../assets/image/game.png';
 import nouvlair from '../assets/image/nouvlair.png';
 import dhCosmetiques from '../assets/image/dh_Cosmetiques.png';
-import MathGameVideo from '../assets/video/Math_Game.mp4';
-import dhCosmetiquesVideo from '../assets/video/dhcosmétique.mp4';
-import nouvlairVideo from '../assets/video/Nouvlair.mp4';
-import { useState } from "react";
-import { FaGithub} from "react-icons/fa";
 
 function Projects() {
   const { lang } = useLanguage();
   const trad = useTrad(lang);
-  const [visibleVideos, setVisibleVideos] = useState({});
   
   if (!trad) return null;
   
@@ -22,14 +16,11 @@ function Projects() {
   const projetsList = () => {
     const list = tradData.Projects?.list || [];
     const images = [nouvlair, dhCosmetiques, game];
-    const videos = [nouvlairVideo, dhCosmetiquesVideo, MathGameVideo];
-
-    const handleShowVideo = (idx) => {
-      setVisibleVideos((prev) => ({
-        ...prev,
-        [idx]: !prev[idx], // toggle true/false
-      }));
-    };
+    const videos = [
+      "https://drive.google.com/file/d/1iq1k_GwmEFgMAENIzJQBtMSvF06OgDez/view?usp=drive_link", // NouvlairVideo
+      "https://drive.google.com/file/d/1yB6TVl1krDHUTSFti817MVvbY60r3QGJ/view?usp=drive_link", // dhCosmetiquesVideo
+      "https://drive.google.com/file/d/1IsxuKET9toHMSf5ispFQ91TAB0FQj683/view?usp=drive_link"  // MathGameVideo
+    ];
 
     return list.map((project, idx) => (
       <Col md={4} sm={6} xs={12} key={idx} className="mb-4">
@@ -55,20 +46,12 @@ function Projects() {
                 </span>
               ))}
             </div>
-
             <div className="mt-auto text-center ">
-              <button className="btn btn-outline-light rounded-pill  px-4 mx-2" onClick={() => handleShowVideo(idx)}>
-                {visibleVideos[idx] ? project.a_Lien : project.p_Lien}
-              </button>
+              <a href={videos[idx]} className="btn btn-outline-light rounded-pill  px-4 mx-2" >
+                {project.p_Lien}
+              </a>
             </div>
-            {visibleVideos[idx] && (
-              <div className="mt-4">
-                <video className="w-100 rounded shadow" controls>
-                  <source src={videos[idx]} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            )}
+            
           </div>
         </div>
       </Col>
