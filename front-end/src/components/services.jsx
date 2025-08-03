@@ -64,13 +64,15 @@ function Services() {
         <h2 className="section-title text-center mb-4">{tradData.Services?.title || "Mes Services"}</h2>
         <Row>
           {services.map((service, idx) => (
-            <Col md={3} sm={6} xs={12} key={idx} className="mb-4">
+            <Col xl={3} lg={4} md={6} sm={6} xs={12} key={idx} className="mb-4">
               <div className='text-center bg-white h-100 shadow text-dark p-4 rounded'>
-                <h3 className='card-title mb-3'>{service.title}</h3>
+                <h3 className="fw-bold text-yinmn-blue mb-3">{service.title}</h3>
                 <ul className='list-unstyled'>
                   {service.skills.map(skill => (
                     <li key={skill.id} className='d-flex align-items-center mb-1'>
-                      <span className='icon me-2' style={{ color: skill.color, fontSize: "1.5rem" }}>{skill.icon}</span>
+                      <span className='icon me-2' style={{ color: skill.color, fontSize: "1.5rem" }}>
+                        {skill.icon}
+                      </span>
                       <span className='skill-name'>{skill.name}</span>
                     </li>
                   ))}
