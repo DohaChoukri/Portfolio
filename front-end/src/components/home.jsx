@@ -17,7 +17,7 @@ export default function Home() {
         <Row className="align-items-center">
           <Col md={7} className="text-white text-col">
             <p className="home-hello mb-2"><i>{tradData.Accueil?.text || "BONJOUR !"}</i></p>
-            <h1 className="home-title mb-3">{tradData.Accueil?.h1 || "Développeuse Web Full Stack"}</h1>
+            <h1 className="home-title mb-3 fw-bold fs-1 lh-sm" style={{ color: "var(--yinmn-blue)" }}>{tradData.Accueil?.h1 || "Développeuse Web Full Stack"}</h1>
             <p className="home-desc text-black mb-4">
               {tradData.Accueil?.p1 || "je conçois des applications modernes et centrées sur l'utilisateur. Curieuse et rigoureuse, je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes."}
             </p>

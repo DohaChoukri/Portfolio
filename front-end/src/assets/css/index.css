@@ -16,12 +16,6 @@
     padding: 4rem 0;
     
   }
-  .home-title {
-    color: var(--yinmn-blue);
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
   .home-hello {
     color: var(--main-dark);
   }
@@ -29,9 +23,8 @@
     background: var(--main-red) !important;
     color: var(--main-white) !important;
   }
-  /* .home-btn:hover {
-    background: var(--china-rose) !important;
-  } */
+
+  
   .home-photo {
     width: 300px;
     height: 300px;
@@ -133,9 +126,6 @@
   }
   
   /* === Services Section === */
-  /* .services-section {
-    background: var(--main-dark);
-  } */
   .services-section .card {
     border: none;
     background: var(--main-white);
@@ -178,7 +168,6 @@
 
 
   .aboutBtn , .home-btn {
-  /* background-color: #39a3dc; même couleur que danger */
   color: #fff;
   font-weight: 600;
   border-radius: 10px;
@@ -189,7 +178,7 @@
 }
 
 .aboutBtn:hover,.home-btn:hover {
-  background-color: #39a3dc; /* teinte légèrement plus foncée au survol */
+  background-color: #39a3dc; 
   transform: translateY(-2px);
   box-shadow: 0 4px 15px #39a3dc;
 }
