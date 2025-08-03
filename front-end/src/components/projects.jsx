@@ -23,7 +23,7 @@ function Projects() {
     ];
 
     return list.map((project, idx) => (
-      <Col md={4} sm={6} xs={12} key={idx} className="mb-4">
+      <Col xl={4} lg={6} md={6} sm={12} xs={12} key={idx} className="mb-4">
         <div className="card h-100 border-0 shadow-sm p-3 text-white" style={{ backgroundColor: "#355070" }}>
           <img
             src={images[idx]}
@@ -32,7 +32,7 @@ function Projects() {
             style={{ height: "200px", objectFit: "cover" }}
           />
           <div className="card-body d-flex flex-column">
-            <h5 className="card-title text-center mb-3 ">{project.title}</h5>
+            <h5 className="card-title text-center mb-3">{project.title}</h5>
             <p className="card-text text-center mb-4">{project.description}</p>
 
             <div className="mb-3">
@@ -46,12 +46,11 @@ function Projects() {
                 </span>
               ))}
             </div>
-            <div className="mt-auto text-center ">
-              <a href={videos[idx]} className="btn btn-outline-light rounded-pill  px-4 mx-2" >
+            <div className="mt-auto text-center">
+              <a href={videos[idx]} className="btn btn-outline-light rounded-pill px-4 mx-2">
                 {project.p_Lien}
               </a>
             </div>
-            
           </div>
         </div>
       </Col>
