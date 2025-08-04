@@ -2,6 +2,8 @@ import { Container, Row, Col, Button ,ProgressBar } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import { useTrad } from './getTrad';
 import { useLanguage } from '../context/LanguageContext';
+import { FaArrowUpFromBracket } from "react-icons/fa6";
+
 
 const skills = [
   { name: "Html/Css/JavaScript", value: 80 },
@@ -34,22 +36,22 @@ function About() {
                 <p>
                   {tradData.About?.p2 || "De l'UX/UI design au développement d'API et à l'optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports."}
                 </p>
-                <p className='text-center'>
+                <div className='text-center'>
                   <Button 
                     variant="danger" 
-                    className="aboutBtn mx-2"
+                    className="aboutBtn mx-2 text-decoration-none text-white bold"
                     onClick={() => {
                       window.open('/CV_Doha.pdf', '_blank');
                     }}
                   >
-                    {tradData.About?.button_cv || "CV"}
+                    <FaArrowUpFromBracket /> {tradData.About?.button_cv || "CV"}
                   </Button>
                   <Link to="/contact">
                     <Button variant="danger" className="aboutBtn text-white bold">
                       {tradData.About?.button_contact || "Contactez-moi"}
                     </Button>
                   </Link>
-                </p>
+                </div>
             </Col>
             <Col md={6} lg={6}>
               <h3 className="card-title">{tradData.About?.h3_2 || "Compétences"}</h3>

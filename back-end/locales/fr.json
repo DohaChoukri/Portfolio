@@ -1,16 +1,17 @@
 [
     {
         "Accueil":{
-            "text":"Bonjour, Je suis DoHa ChOukri ",
+            "text":"Bonjour, Je suis Doha Choukri ",
             "h1" :"Développeuse Full Stack",
-            "p1":"je conçois des applications modernes et centrées sur l'utilisateur. Curieuse et rigoureuse,je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes.",
-            "button":"Voir le profil LinkedIn"
+            "p1":"Je conçois des applications modernes et centrées sur l'utilisateur. Curieux et rigoureux, je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes.",
+            "button":"Voir le profil LinkedIn",
+            "buttonG":"GitHub"
         },
         "About":{
             "title": "À propos",
             "h3_1": "Développeuse Web Full Stack",
             "p1": "Je conçois et développe des applications web de bout en bout, en combinant des interfaces modernes et intuitives avec des architectures backend solides et sécurisées.",
-            "p2": "De l’UX/UI design au développement d’API et à l’optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports.",
+            "p2": "De l'UX/UI design au développement d'API et à l'optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports.",
             "button_cv": "CV",
             "button_contact": "Contactez-moi",
             "h3_2": "Compétences",

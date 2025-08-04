@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import img from '../assets/image/photo.png';
+import img from '../assets/image/photo1.png';
 import { useTrad } from './getTrad';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -37,14 +37,19 @@ function Header() {
       className="custom-navbar" 
       expanded={expanded}
     >
-      <Container className="mt-2">
-        <img src={img} id="img1" alt="Doha Choukri" />
-        <p
-          style={{ cursor: 'pointer', fontWeight: 'bold', fontSize: '1.2rem' }}
-          className="navbar-brand"
-        >
-          DoHa chOukri
-        </p>
+      <Container className='mt-2 mb-2'>
+        <Link to="/" className="text-decoration-none d-flex align-items-center gap-2" onClick={() => setExpanded(false)}>
+          <div className="d-flex align-items-center  header-profile">
+            <div className="profile-img-wrapper mx-2">
+              <img src={img} alt="Profil" className="profile-img" />
+            </div>
+          
+          <p
+            className="fw-bold fs-5 text-white mb-0"
+          >
+            Doha Choukri
+          </p></div>
+        </Link>
         <Navbar.Toggle 
           aria-controls="main-navbar" 
           onClick={() => setExpanded(expanded ? false : true)} 

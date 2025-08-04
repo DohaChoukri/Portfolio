@@ -1,10 +1,11 @@
 [
     {
         "Accueil":{
-            "text":"Hello, I'm DoHa ChOukri ",
+            "text":"Hello, I'm Doha Choukri ",
             "h1" :"Full Stack Web Developer",
             "p1":"I design modern, user-centered applications. Curious and rigorous, I adapt to technological changes to offer relevant solutions.",
-            "button":"View LinkedIn profile"
+            "button":"View LinkedIn profile",
+            "buttonG":"GitHub"
         },
         "About":{
             "title": "About",

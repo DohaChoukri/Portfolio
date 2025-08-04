@@ -2,6 +2,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import photo from "../assets/image/photo.png";
 import { useTrad } from './getTrad';
 import { useLanguage } from '../context/LanguageContext';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -27,6 +28,13 @@ export default function Home() {
               target="_blank"
             >
               {tradData.Accueil?.button || "Voir le profil LinkedIn"}
+            </Button>
+            <Button
+              className="home-btn btn-danger mx-2 my-2"
+              href="https://github.com/DohaChoukri"
+              target="_blank"
+            >
+              <FaGithub /> {tradData.Accueil?.buttonG || "GitHub"}
             </Button>
           </Col>
           <Col md={5} className="text-center">
