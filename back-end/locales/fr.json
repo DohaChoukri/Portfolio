@@ -1,88 +1,88 @@
 [
-    {
-        "Accueil":{
-            "text":"Bonjour, Je suis Doha Choukri ",
-            "h1" :"Développeuse Full Stack",
-            "p1":"Je conçois des applications modernes et centrées sur l'utilisateur. Curieux et rigoureux, je m'adapte aux évolutions technologiques pour proposer des solutions pertinentes.",
-            "button":"Voir le profil LinkedIn",
-            "buttonG":"GitHub"
+  {
+    "Accueil": {
+      "text": "Bonjour, je suis Doha Choukri",
+      "h1": "Développeuse Full Stack",
+      "p1": "Je conçois des applications web modernes, intuitives et centrées sur l'utilisateur. Curieuse et rigoureuse, je reste à l'écoute des dernières technologies pour proposer des solutions numériques pertinentes et innovantes.",
+      "button": "Voir le profil LinkedIn",
+      "buttonG": "GitHub"
+    },
+    "About": {
+      "title": "À propos",
+      "h3_1": "Développeuse Web Full Stack",
+      "p1": "Je conçois et développe des applications web de bout en bout, en combinant des interfaces modernes et intuitives avec des architectures backend solides et sécurisées.",
+      "p2": "De l’UX/UI design au développement d’API et à l’optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports.",
+      "button_cv": "CV",
+      "button_contact": "Contactez-moi",
+      "h3_2": "Compétences",
+      "skills": [
+        "HTML/CSS/JavaScript",
+        "Python",
+        "ReactJs",
+        "PHP",
+        "Laravel",
+        "UI / UX Figma"
+      ]
+    },
+    "Services": {
+      "title": "Mes Services",
+      "backend": "Développement Backend",
+      "backend_skills": ["PHP", "Node.js", "Laravel"],
+      "frontend": "Développement Frontend",
+      "frontend_skills": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Redux"],
+      "database": "Conception de Bases de Données",
+      "database_skills": ["MySQL", "MongoDB"],
+      "tools": "Outils",
+      "tools_skills": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "WordPress"]
+    },
+    "Projects": {
+      "title": "Mes projets",
+      "list": [
+        {
+          "title": "Plateforme Interactive d’Apprentissage",
+          "description": "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences.",
+          "Technologies": ["React", "CSS3", "Bootstrap5", "Laravel", "API"],
+          "p_Lien": "Voir le projet",
+          "a_Lien": "Masquer la vidéo"
         },
-        "About":{
-            "title": "À propos",
-            "h3_1": "Développeuse Web Full Stack",
-            "p1": "Je conçois et développe des applications web de bout en bout, en combinant des interfaces modernes et intuitives avec des architectures backend solides et sécurisées.",
-            "p2": "De l'UX/UI design au développement d'API et à l'optimisation des bases de données, chaque projet est pensé pour offrir une expérience fluide, rapide et adaptée à tous les supports.",
-            "button_cv": "CV",
-            "button_contact": "Contactez-moi",
-            "h3_2": "Compétences",
-            "skills": [
-                "Html/Css/JavaScript",
-                "Python",
-                "ReactJs",
-                "PHP",
-                "Laravel",
-                "UI / UX Figma"
-            ]
+        {
+          "title": "Site e-commerce DHCos",
+          "description": "Ce projet vise à développer une solution technologique innovante pour promouvoir et gérer la vente de cosmétiques naturels. Il s’inscrit dans une tendance croissante de consommation responsable, répondant à la demande de produits sains, écologiques et éthiques.",
+          "Technologies": ["Odoo", "PostgreSQL"],
+          "p_Lien": "Voir le projet",
+          "a_Lien": "Masquer la vidéo"
         },
-        "Services":{
-            "title": "Mes Services",
-            "backend": "Développement Backend",
-            "backend_skills": ["PHP", "Node.js", "Laravel"],
-            "frontend": "Développement Frontend",
-            "frontend_skills": ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Redux"],
-            "database": "Conception de Bases de Données",
-            "database_skills": ["MySQL", "MongoDB"],
-            "tools": "Outils",
-            "tools_skills": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Jira", "WordPress"]
-        },
-        "Projects":{
-            "title": "Mes projets",
-            "list": [
-                {
-                    "title": "Plateforme Interactive d'Apprentissage",
-                    "description": "Application web éducative permettant aux enseignants de créer des cours, des groupes et des questions. Les étudiants peuvent suivre leur progression et acquérir des compétences.",
-                    "Technologies": ["React","CSS3", "Bootstrap5", "Laravel", "API"],
-                    "p_Lien" :"Voir le projet",
-                    "a_Lien" :"Masque la video"
-                },
-                {
-                    "title": "Site e-commerce DHCos",
-                    "description": "Le projet, vise à développer une solution technologique innovante pour promouvoir et gérer la vente de cosmétiques naturels. Il s'inscrit dans une tendance croissante de consommation responsable, répondant à la demande de produits sains, écologiques et éthiques.",
-                    "Technologies": ["Odoo", "PostgreSQL"],
-                    "p_Lien" :"Voir le projet",
-                    "a_Lien" :"Masque la video"
-                },
-                {
-                    "title": "Jeu éducatif Game Math",
-                    "description": "Jeu éducatif pour renforcer les compétences en mathématiques des enfants.",
-                    "Technologies": ["HTML5", "CSS3", "Bootstrap5", "JavaScript", "PHP"],
-                    "p_Lien" :"Voir le projet",
-                    "a_Lien" :"Masque la video"
-                }
-            ]
-        },
-        "Contact":{
-            "title": "Contactez-moi",
-            "name": "Doha Choukri",
-            "job": "Développeuse Web Full Stack",
-            "age": "20 ans",
-            "phone": "06 17 61 21 91",
-            "location": "Casablanca, Maroc",
-            "form_name": "Entrez votre nom",
-            "form_email": "Entrez l'adresse email",
-            "form_message": "Entrez votre message",
-            "button": "Contactez-moi",
-            "success": "Message envoyé avec succès !",
-            "sending": "Envoi en cours...",
-            "error": "Erreur : ",
-            "server_error": "Erreur serveur, réessayez plus tard."
-        },
-        "header": {
-            "home": "Accueil",
-            "about": "À propos",
-            "services": "Services",
-            "projects": "Projets",
-            "contact": "Contactez-moi"
+        {
+          "title": "Jeu éducatif Game Math",
+          "description": "Jeu éducatif pour renforcer les compétences en mathématiques des enfants.",
+          "Technologies": ["HTML5", "CSS3", "Bootstrap5", "JavaScript", "PHP"],
+          "p_Lien": "Voir le projet",
+          "a_Lien": "Masquer la vidéo"
         }
+      ]
+    },
+    "Contact": {
+      "title": "Contactez-moi",
+      "name": "Doha Choukri",
+      "job": "Développeuse Web Full Stack",
+      "age": "20 ans",
+      "phone": "06 17 61 21 91",
+      "location": "Casablanca, Maroc",
+      "form_name": "Entrez votre nom",
+      "form_email": "Entrez votre adresse email",
+      "form_message": "Entrez votre message",
+      "button": "Contactez-moi",
+      "success": "Message envoyé avec succès !",
+      "sending": "Envoi en cours...",
+      "error": "Erreur : ",
+      "server_error": "Erreur serveur, réessayez plus tard."
+    },
+    "header": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "projects": "Projets",
+      "contact": "Contactez-moi"
     }
+  }
 ]
