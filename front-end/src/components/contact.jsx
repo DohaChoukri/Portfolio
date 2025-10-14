@@ -51,7 +51,7 @@ function Contact() {
               <p><FaPhone /> <b className="text-black">{tradData.Contact?.phone || "06 17 61 21 91"}</b></p>            
               <p><FaMapMarkerAlt /> <b className="text-black">{tradData.Contact?.location || "Casablanca, Maroc"}</b></p>
               <p className="text-center fs-5">
-                <a href="mailto:dohachoukri116@gmail.com" className="mx-2 "><FaEnvelope /></a>
+                <a href="mailto:dohachoukri014@gmail.com" className="mx-2 "><FaEnvelope /></a>
                 <a href="https://www.linkedin.com/in/doha-choukri-116/" target="_blank" rel="noopener noreferrer" className="mx-2 "><FaLinkedin /></a>
                 <a href="https://github.com/DohaChoukri" target="_blank" rel="noopener noreferrer" className="mx-2 "><FaGithub /></a>
               </p>
